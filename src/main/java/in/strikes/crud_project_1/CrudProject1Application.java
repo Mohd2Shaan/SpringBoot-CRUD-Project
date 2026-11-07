@@ -6,7 +6,7 @@ import org.springframework.boot.jdbc.autoconfigure.DataSourceAutoConfiguration;
 
 
 // as we are using the jpa and mysql connector dependencies then due to the @EnableAutoConfiguration all the required beans which is needed got up and as they don't get any db url to connect so it returns error.
-@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class})
+@SpringBootApplication()
 public class CrudProject1Application {
 
 	public static void main(String[] args) {
